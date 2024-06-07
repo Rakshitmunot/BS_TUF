@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search Questions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #050505;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: black;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(249, 253, 4, 0.988);
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            text-align: center;
+            color: #f8d405;
+        }
+        .question {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .question input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .question a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .question a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><u>BINARY SEARCH'S PLAYLIST ALL QUESTIONS</u></h1>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox1"> 
+            <a href="https://www.naukri.com/code360/problems/binary-search_972">Binary search to find X in a sorted array</a>
+        </div>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox2"> 
+            <a href="https://www.naukri.com/code360/problems/lower-bound_8165382">Implement Lower Bound</a>
+        </div>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox3"> 
+            <a href="https://www.naukri.com/code360/problems/implement-upper-bound_8165383">Implement Upper Bound</a>
+        </div>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox4"> 
+            <a href="https://www.naukri.com/code360/problems/algorithm-to-find-best-insert-position-in-sorted-array_839813">Search Insert Position</a>
+        </div>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox5"> 
+            <a href="https://www.naukri.com/code360/problems/ceiling-in-a-sorted-array_1825401">Floor/Ceil in Sorted Array</a>
+        </div>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox6"> 
+            <a href="https://www.naukri.com/code360/problems/first-and-last-position-of-an-element-in-sorted-array_1082549">First and Last occurrences</a>
+        </div>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox7"> 
+            <a href="https://www.naukri.com/code360/problems/occurrence-of-x-in-a-sorted-array_630456">Count occurrences</a>
+        </div>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox8"> 
+            <a href="https://www.naukri.com/code360/problems/search-in-rotated-sorted-array_1082554">Search in Rotated Sorted Array I</a>
+        </div>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox9"> 
+            <a href="https://www.naukri.com/code360/problems/search-in-a-rotated-sorted-array-ii_7449547">Search in Rotated Sorted Array II</a>
+        </div>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox10"> 
+            <a href="https://www.naukri.com/code360/problems/rotated-array_1093219">Find minimum in Rotated Sorted Array</a>
+        </div>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox11"> 
+            <a href="https://www.naukri.com/code360/problems/rotation_7449070">Find out how many times has an array been rotated</a>
+        </div>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox12"> 
+            <a href="https://www.naukri.com/code360/problems/unique-element-in-sorted-array_1112654">Single element in a Sorted Array</a>
+        </div>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox13"> 
+            <a href="https://www.naukri.com/code360/problems/find-peak-element_1081482">Find peak element</a>
+        </div>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox14"> 
+            <a href="https://www.naukri.com/code360/problems/square-root-integral_893351?leftPanelTab=0%3Futm_source%3Dyoutube">Find square root of a number in log n</a>
+        </div>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox15"> 
+            <a href="https://www.naukri.com/code360/problems/nth-root-of-m_1062679">Find the Nth root of a number using binary search</a>
+        </div>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox16"> 
+            <a href="https://www.naukri.com/code360/problems/minimum-rate-to-eat-bananas_7449064">Koko Eating Bananas</a>
+        </div>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox17"> 
+            <a href="https://www.naukri.com/code360/problems/rose-garden_2248080">Minimum days to make M bouquets</a>
+        </div>
+        <div class="question">
+            <input type="checkbox" id="binarySearchCheckbox18"> 
+            <a href="https://www.naukri.com/code360/problems/smallest-divisor-with-the-given-limit_1755882">Find the smallest Divisor</a>
+        </div>
+    </div>
+    <script>
+        // Function to save the checkbox state in localStorage
+        function saveCheckboxState(id) {
+            const checkbox = document.getElementById(id);
+            localStorage.setItem(id, checkbox.checked);
+        }
+
+        // Function to load the checkbox state from localStorage
+        function loadCheckboxState(id) {
+            const checkbox = document.getElementById(id);
+            const isChecked = localStorage.getItem(id);
+            if (isChecked === 'true') {
+                checkbox.checked = true;
+            }
+            checkbox.addEventListener('change', function() {
+                saveCheckboxState(id);
+            });
+        }
+
+        // List of checkbox IDs
+        const checkboxIds = [
+            'binarySearchCheckbox1',
+            'binarySearchCheckbox2',
+            'binarySearchCheckbox3',
+            'binarySearchCheckbox4',
+            'binarySearchCheckbox5',
+            'binarySearchCheckbox6',
+            'binarySearchCheckbox7',
+            'binarySearchCheckbox8',
+            'binarySearchCheckbox9',
+            'binarySearchCheckbox10',
+            'binarySearchCheckbox11',
+            'binarySearchCheckbox12',
+            'binarySearchCheckbox13',
+            'binarySearchCheckbox14',
+            'binarySearchCheckbox15',
+            'binarySearchCheckbox16',
+            'binarySearchCheckbox17',
+            'binarySearchCheckbox18'
+        ];
+
+        // Load the state for each checkbox on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            checkboxIds.forEach(loadCheckboxState);
+        });
+    </script>
+</body>
+</html>
